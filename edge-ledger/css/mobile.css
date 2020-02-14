@@ -1,0 +1,70 @@
+/* Align icon to left */
+
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+body {
+  width: 100%;
+}
+
+/* Position Icon */
+
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smartphones */
+
+@media(max-width:550px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  #showcase .showcase-content {
+    top: 115px;
+    margin-top:
+  }
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+  #clients .items img {
+    width: 80%;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+  #contact {
+    display: block;
+  }
+  #map {
+    height: 300px;
+  }
+  #showcase .l-heading {
+    font-size: 2rem;
+  }
+}
+
+@media(max-height:568px) {
+  #showcase .l-heading {
+    font-size: 1.5rem;
+  }
+}

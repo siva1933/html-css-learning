@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Float & Align</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+      .container {
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      .box {
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+        border: #777 2px solid;
+      }
+
+      .box p {
+        /* Text alignn (by default left) */
+        text-align: center;
+        text-align: left;
+        text-align: justify;
+        text-align: right; /* last will override */
+      }
+
+      /* used to remove floats */
+      .clr {
+        clear: both;
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+          laboriosam numquam placeat, quae temporibus neque ipsa, enim quasi,
+          voluptatum sapiente quisquam quas. Placeat, esse rerum exercitationem
+          excepturi corporis eius itaque.
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+          laboriosam numquam placeat, quae temporibus neque ipsa, enim quasi,
+          voluptatum sapiente quisquam quas. Placeat, esse rerum exercitationem
+          excepturi corporis eius itaque.
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+          laboriosam numquam placeat, quae temporibus neque ipsa, enim quasi,
+          voluptatum sapiente quisquam quas. Placeat, esse rerum exercitationem
+          excepturi corporis eius itaque.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+          laboriosam numquam placeat, quae temporibus neque ipsa, enim quasi,
+          voluptatum sapiente quisquam quas. Placeat, esse rerum exercitationem
+          excepturi corporis eius itaque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

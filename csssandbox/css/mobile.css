@@ -1,0 +1,11 @@
+/* @media (max-width: 500px) { */
+
+body {
+  background: pink;
+}
+
+#smartphone h1 {
+  display: block;
+}
+
+/* } */

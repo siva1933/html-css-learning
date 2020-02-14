@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vh & Vw units</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #header {
+        background: #333 url('https://source.unsplash.com/daily') no-repeat
+          center center/cover;
+        color: #fff;
+        height: 100vh;
+        /* width: 60vw; */
+        text-align: center;
+        padding: 2rem;
+        padding-top: 5rem;
+      }
+
+      #header h3 {
+        font-size: 3rem;
+      }
+
+      #header p {
+        margin: 1rem 0;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      @media (max-height: 450px) {
+        #header {
+          padding-top: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h3>Welcome to our website</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ullam
+        nesciunt repellat ipsum sunt quibusdam, iusto aliquid laudantium, labore
+        quia aliquam incidunt porro consectetur similique molestias corporis
+        aspernatur asperiores rerum.
+      </p>
+      <a href="#" class="btn">Find out more</a>
+    </div>
+    <section>
+      <h3>
+        About Our Company
+      </h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+        quisquam, ut ducimus, nesciunt eligendi mollitia, consequatur esse vel
+        sequi cumque itaque aspernatur officiis sint pariatur necessitatibus
+        quia eveniet veniam optio sapiente ex perferendis! Laborum, ducimus
+        nostrum vel inventore asperiores temporibus corporis voluptatibus
+        doloremque, debitis non dolorum nemo, sit rerum autem!
+      </p>
+    </section>
+  </body>
+</html>

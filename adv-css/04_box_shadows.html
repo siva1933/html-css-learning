@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Shadows</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+
+        /* offset-x | offset-y | color */
+        box-shadow: 10px 10px teal;
+        /* offset-x | offset-y | blur-radius | color */
+        box-shadow: 5px 5px 20px teal;
+        /* left and top if -ve */
+        box-shadow: -5px -5px 20px teal;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+        /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+
+        box-shadow: inset 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+        /* Multiple shadows */
+        box-shadow: 5px 5px 20px teal, -5px -5px 20px teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, harum.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, harum.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, harum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

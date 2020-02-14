@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transitions</title>
+    <style>
+      body {
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .box {
+        background: white;
+        width: 100px;
+        height: 100px;
+        /* transition-property: background;
+        transition-duration: 3s;
+        transition-delay: 2s;
+        transition-timing-function: ease-in-out; */
+
+        transition: all 2s ease-in-out;
+      }
+
+      .box:hover {
+        background: red;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+      }
+
+      /* TRANSITIONAL PROPRTIES
+      
+      -- Properties that have an identifiable halfway point
+
+      background-color,position
+      border-color,width,spacing,radius
+      min,max - height, width
+      padding
+      margin
+      visibility
+      opacity
+      z-index 
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

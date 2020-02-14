@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Modals / Margin & Padding</title>
+    <style>
+      /* CSS Reset  * selects everything */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid;
+        padding: 20px;
+        /* padding: 120px; */
+        width: 300px;
+        margin: 30px;
+
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        /* padding shorthand = t,r,b,l */
+        padding: 20px 30px 20px 30px;
+
+        /* padding shorthand = t/b l/r */
+        padding: 20px 30px;
+
+        /* same shorthands work for margin */
+      }
+
+      .box h3 {
+        padding-bottom: 20px;
+      }
+
+      .box p {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>
+        Box One
+      </h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+        nesciunt ullam illum neque libero soluta aperiam voluptatum ad
+        recusandae dolorum!
+      </p>
+    </div>
+    <div class="box">
+      <h3>
+        Box Two
+      </h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+        nesciunt ullam illum neque libero soluta aperiam voluptatum ad
+        recusandae dolorum!
+      </p>
+    </div>
+  </body>
+</html>
